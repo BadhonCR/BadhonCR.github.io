@@ -1,0 +1,406 @@
+/* ===========================================
+   animations.css
+   Premium Portfolio Animations
+=========================================== */
+
+/* Smooth scrolling */
+html{
+    scroll-behavior:smooth;
+}
+
+/* ===========================================
+   KEYFRAMES
+=========================================== */
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeLeft{
+    from{
+        opacity:0;
+        transform:translateX(-50px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes fadeRight{
+    from{
+        opacity:0;
+        transform:translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes zoomIn{
+    from{
+        opacity:0;
+        transform:scale(.8);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-12px);
+    }
+}
+
+@keyframes pulse{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.05);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+@keyframes rotate360{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes gradientMove{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color:transparent;
+    }
+}
+
+@keyframes bounce{
+    0%,20%,50%,80%,100%{
+        transform:translateY(0);
+    }
+    40%{
+        transform:translateY(-12px);
+    }
+    60%{
+        transform:translateY(-6px);
+    }
+}
+
+@keyframes slideIn{
+    from{
+        transform:translateX(100%);
+    }
+    to{
+        transform:translateX(0);
+    }
+}
+
+@keyframes ripple{
+    0%{
+        transform:scale(0);
+        opacity:.6;
+    }
+    100%{
+        transform:scale(4);
+        opacity:0;
+    }
+}
+
+/* ===========================================
+   PAGE LOADER
+=========================================== */
+
+.loader{
+    width:60px;
+    height:60px;
+    border:5px solid rgba(255,255,255,.2);
+    border-top-color:#3b82f6;
+    border-radius:50%;
+    animation:rotate360 1s linear infinite;
+}
+
+/* ===========================================
+   HERO
+=========================================== */
+
+.hero h1{
+    animation:fadeDown .9s ease;
+}
+
+.hero h2{
+    animation:fadeUp 1s ease;
+}
+
+.hero p{
+    animation:fadeUp 1.2s ease;
+}
+
+.hero img{
+    animation:float 5s ease-in-out infinite;
+}
+
+/* ===========================================
+   BUTTONS
+=========================================== */
+
+.btn{
+    transition:.35s;
+    position:relative;
+    overflow:hidden;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(59,130,246,.4);
+}
+
+.btn::after{
+    content:"";
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:0;
+    height:0;
+    background:rgba(255,255,255,.3);
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+}
+
+.btn:active::after{
+    animation:ripple .6s linear;
+}
+
+/* ===========================================
+   CARDS
+=========================================== */
+
+.card,
+.project-card,
+.skill-card{
+    transition:
+    transform .35s,
+    box-shadow .35s;
+}
+
+.card:hover,
+.project-card:hover,
+.skill-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+
+/* ===========================================
+   SOCIAL ICONS
+=========================================== */
+
+.social-icons a{
+    transition:.35s;
+}
+
+.social-icons a:hover{
+    transform:translateY(-8px) scale(1.15);
+}
+
+/* ===========================================
+   NAVBAR
+=========================================== */
+
+nav a{
+    transition:.3s;
+}
+
+nav a:hover{
+    transform:translateY(-2px);
+}
+
+/* ===========================================
+   IMAGES
+=========================================== */
+
+.project-card img,
+.about-image img{
+    transition:transform .5s;
+}
+
+.project-card:hover img,
+.about-image:hover img{
+    transform:scale(1.08);
+}
+
+/* ===========================================
+   TYPING EFFECT
+=========================================== */
+
+.typing{
+    display:inline-block;
+    border-right:3px solid #ffffff;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:blink .8s infinite;
+}
+
+/* ===========================================
+   SCROLL PROGRESS BAR
+=========================================== */
+
+.progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0;
+    height:4px;
+    background:#3b82f6;
+    z-index:9999;
+}
+
+/* ===========================================
+   BACK TO TOP
+=========================================== */
+
+#topBtn{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:52px;
+    height:52px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    display:none;
+    transition:.35s;
+}
+
+#topBtn:hover{
+    animation:bounce .8s;
+}
+
+/* ===========================================
+   FLOATING ELEMENTS
+=========================================== */
+
+.float{
+    animation:float 4s ease-in-out infinite;
+}
+
+.pulse{
+    animation:pulse 2s infinite;
+}
+
+.fade-up{
+    animation:fadeUp .8s ease both;
+}
+
+.fade-down{
+    animation:fadeDown .8s ease both;
+}
+
+.fade-left{
+    animation:fadeLeft .8s ease both;
+}
+
+.fade-right{
+    animation:fadeRight .8s ease both;
+}
+
+.zoom-in{
+    animation:zoomIn .8s ease both;
+}
+
+/* ===========================================
+   SECTION TITLES
+=========================================== */
+
+.section-title{
+    animation:fadeUp .8s ease;
+}
+
+/* ===========================================
+   HERO BACKGROUND
+=========================================== */
+
+.hero{
+    background-size:300% 300%;
+    animation:gradientMove 10s ease infinite;
+}
+
+/* ===========================================
+   PROJECT TAGS
+=========================================== */
+
+.tags span{
+    transition:.3s;
+}
+
+.tags span:hover{
+    transform:scale(1.08);
+}
+
+/* ===========================================
+   REDUCED MOTION
+=========================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+*,
+*::before,
+*::after{
+
+animation:none !important;
+
+transition:none !important;
+
+scroll-behavior:auto !important;
+
+}
+
+}
