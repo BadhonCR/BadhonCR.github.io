@@ -1,0 +1,367 @@
+/* ==========================================
+   responsive.css
+   Premium Portfolio Responsive Styles
+========================================== */
+
+/* =========================
+   Large Desktop (1400px+)
+========================= */
+
+@media (min-width:1400px){
+
+.container{
+    max-width:1320px;
+}
+
+.hero h1{
+    font-size:72px;
+}
+
+.hero h2{
+    font-size:40px;
+}
+
+}
+
+/* =========================
+   Laptop (1200px)
+========================= */
+
+@media (max-width:1200px){
+
+.container{
+    width:94%;
+}
+
+.hero h1{
+    font-size:52px;
+}
+
+.grid,
+.projects-grid,
+.skills-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+/* =========================
+   Tablet Landscape
+========================= */
+
+@media (max-width:992px){
+
+header .container{
+    padding:16px 0;
+}
+
+.hero{
+    padding:110px 0;
+}
+
+.hero h1{
+    font-size:44px;
+}
+
+.hero h2{
+    font-size:28px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:40px;
+}
+
+.about-image{
+    text-align:center;
+}
+
+.about-image img{
+    width:280px;
+}
+
+.grid,
+.projects-grid,
+.skills-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:30px;
+}
+
+.timeline{
+    padding-left:18px;
+}
+
+.timeline-item::before{
+    left:-28px;
+}
+
+}
+
+/* =========================
+   Tablet Portrait
+========================= */
+
+@media (max-width:768px){
+
+header .container{
+    flex-direction:column;
+    gap:18px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.hero{
+    padding:90px 0;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero h2{
+    font-size:24px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    align-items:center;
+}
+
+.btn{
+    width:220px;
+    justify-content:center;
+}
+
+.page-title{
+    padding:70px 0;
+}
+
+.page-title h1{
+    font-size:36px;
+}
+
+.grid,
+.projects-grid,
+.skills-grid{
+    grid-template-columns:1fr;
+}
+
+.card{
+    padding:24px;
+}
+
+.project-card img{
+    height:220px;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
+}
+
+.social-icons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+}
+
+/* =========================
+   Mobile Large
+========================= */
+
+@media (max-width:576px){
+
+body{
+    font-size:15px;
+}
+
+.logo{
+    font-size:24px;
+}
+
+.hero{
+    padding:80px 0;
+}
+
+.hero h1{
+    font-size:30px;
+}
+
+.hero h2{
+    font-size:20px;
+}
+
+.hero p{
+    font-size:15px;
+}
+
+.section-title{
+    font-size:28px;
+}
+
+.page-title h1{
+    font-size:30px;
+}
+
+.card{
+    padding:20px;
+}
+
+.project-content{
+    padding:20px;
+}
+
+.project-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.btn-small{
+    width:100%;
+    text-align:center;
+}
+
+.about-image img{
+    width:220px;
+}
+
+input,
+textarea,
+select{
+    font-size:16px;
+}
+
+iframe{
+    height:280px;
+}
+
+footer{
+    padding:25px 0;
+}
+
+}
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media (max-width:400px){
+
+.hero h1{
+    font-size:26px;
+}
+
+.hero h2{
+    font-size:18px;
+}
+
+.hero p{
+    font-size:14px;
+}
+
+.logo{
+    font-size:22px;
+}
+
+nav{
+    gap:10px;
+}
+
+nav a{
+    font-size:14px;
+}
+
+.btn{
+    width:100%;
+}
+
+.page-title h1{
+    font-size:26px;
+}
+
+.section-title{
+    font-size:24px;
+}
+
+.card{
+    padding:18px;
+}
+
+.project-card img{
+    height:180px;
+}
+
+.about-image img{
+    width:180px;
+}
+
+}
+
+/* =========================
+   Landscape Phones
+========================= */
+
+@media (max-height:500px) and (orientation:landscape){
+
+.hero{
+    padding:60px 0;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.hero h2{
+    font-size:20px;
+}
+
+}
+
+/* =========================
+   Print
+========================= */
+
+@media print{
+
+header,
+footer,
+nav,
+.hero,
+.btn,
+.social-icons,
+#topBtn{
+    display:none !important;
+}
+
+body{
+    background:#fff;
+    color:#000;
+}
+
+.card{
+    box-shadow:none;
+    border:1px solid #ccc;
+}
+
+}
