@@ -2,296 +2,437 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Badhon Chandra Roy | Portfolio</title>
+    <!-- ==========================================
+                    BASIC META
+    =========================================== -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Badhon Chandra Roy | Portfolio
+    </title>
 
     <meta name="description"
-        content="Official Portfolio of Badhon Chandra Roy - Mathematics Student, Web Developer & WordPress Designer">
+        content="Official Portfolio of Badhon Chandra Roy">
 
     <meta name="keywords"
-        content="Badhon Chandra Roy, Portfolio, Web Developer, WordPress, HTML, CSS, JavaScript, Mathematics">
+        content="Portfolio, Web Developer, GitHub, Programmer, Bangladesh">
 
-    <meta name="author" content="Badhon Chandra Roy">
+    <meta name="author"
+        content="Badhon Chandra Roy">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Badhon Chandra Roy | Portfolio">
-    <meta property="og:description" content="Official Portfolio Website">
-    <meta property="og:type" content="website">
+    <!-- ==========================================
+                    FAVICON
+    =========================================== -->
 
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#0f172a">
+    <link rel="icon"
+        href="assets/images/favicon.png">
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.png">
+    <!-- ==========================================
+                    BOOTSTRAP
+    =========================================== -->
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
         rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <!-- Bootstrap Icons -->
 
-    <!-- AOS Animation -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- AOS -->
+
     <link rel="stylesheet"
         href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
 </head>
 
 <body>
 
-<header>
+    <!-- ==========================================
+                    PRELOADER
+    =========================================== -->
 
-<div class="container">
+    <div id="preloader">
 
-<a href="#" class="logo">Badhon<span>CR</span></a>
+        <div class="loader"></div>
 
-<nav>
+    </div>
 
-<a href="#about">About</a>
+    <!-- ==========================================
+                    HEADER
+    =========================================== -->
 
-<a href="#skills">Skills</a>
+    <header>
 
-<a href="#projects">Projects</a>
+        <nav class="navbar navbar-expand-lg fixed-top">
 
-<a href="#contact">Contact</a>
+            <div class="container">
 
-</nav>
+                <a class="navbar-brand"
+                    href="#">
 
-<button class="menu-btn">
-<i class="fa-solid fa-bars"></i>
-</button>
+                    Badhon<span>CR</span>
 
-</div>
+                </a>
 
-</header>
+                <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbar">
 
-<!-- Hero -->
+                    <span class="navbar-toggler-icon"></span>
 
-<section class="hero">
+                </button>
 
-<div class="container hero-content" data-aos="fade-up">
+                <div class="collapse navbar-collapse"
+                    id="navbar">
 
-<h1>Hello, I'm</h1>
+                    <ul class="navbar-nav ms-auto">
 
-<h2>Badhon Chandra Roy</h2>
+                        <li class="nav-item">
 
-<p id="typing"></p>
+                            <a class="nav-link active"
+                                href="#home">
 
-<div class="hero-buttons">
+                                Home
 
-<a href="#projects" class="btn">
-<i class="fa-solid fa-code"></i>
-View Projects
-</a>
+                            </a>
 
-<a href="files/BadhonCV.pdf" class="btn secondary" download>
-<i class="fa-solid fa-download"></i>
-Download CV
-</a>
+                        </li>
 
-</div>
+                        <li class="nav-item">
 
-<div class="social-icons">
+                            <a class="nav-link"
+                                href="#about">
 
-<a href="https://github.com/BadhonCR" target="_blank">
-<i class="fab fa-github"></i>
-</a>
+                                About
 
-<a href="#">
-<i class="fab fa-facebook"></i>
-</a>
+                            </a>
 
-<a href="#">
-<i class="fab fa-linkedin"></i>
-</a>
+                        </li>
 
-<a href="#">
-<i class="fab fa-youtube"></i>
-</a>
+                        <li class="nav-item">
 
-</div>
+                            <a class="nav-link"
+                                href="#skills">
 
-</div>
+                                Skills
 
-</section>
+                            </a>
 
-<!-- About -->
+                        </li>
 
-<section id="about" class="container">
+                        <li class="nav-item">
 
-<div class="card" data-aos="fade-right">
+                            <a class="nav-link"
+                                href="#projects">
 
-<h2>About Me</h2>
+                                Projects
 
-<p>
+                            </a>
 
-I'm <strong>Badhon Chandra Roy</strong>, a Mathematics student and
-passionate Web Developer from Bangladesh.
+                        </li>
 
-I enjoy creating beautiful, responsive websites,
-working with WordPress, GitHub, HTML, CSS and JavaScript.
+                        <li class="nav-item">
 
-</p>
+                            <a class="nav-link"
+                                href="#services">
 
-</div>
+                                Services
 
-</section>
+                            </a>
 
-<!-- Skills -->
+                        </li>
 
-<section id="skills" class="container">
+                        <li class="nav-item">
 
-<h2 data-aos="fade-up">Skills</h2>
+                            <a class="nav-link"
+                                href="#contact">
 
-<div class="grid">
+                                Contact
 
-<div class="card">HTML5</div>
+                            </a>
 
-<div class="card">CSS3</div>
+                        </li>
 
-<div class="card">JavaScript</div>
+                    </ul>
 
-<div class="card">WordPress</div>
+                </div>
 
-<div class="card">Git & GitHub</div>
+            </div>
 
-<div class="card">Responsive Design</div>
+        </nav>
 
-<div class="card">SEO</div>
+    </header>
 
-<div class="card">Mathematics</div>
+    <!-- ==========================================
+                    HERO
+    =========================================== -->
 
-</div>
+    <section id="home"
+        class="hero">
 
-</section>
+        <div class="container">
 
-<!-- Projects -->
+            <div class="row align-items-center">
 
-<section id="projects" class="container">
+                <div class="col-lg-6"
+                    data-aos="fade-right">
 
-<h2 data-aos="fade-up">Featured Projects</h2>
+                    <p class="subtitle">
 
-<div class="grid">
+                        Hello, I'm
 
-<div class="card">
+                    </p>
 
-<h3>Portfolio Website</h3>
+                    <h1>
 
-<p>Modern personal portfolio with responsive design.</p>
+                        Badhon Chandra Roy
 
-<a href="#" class="btn-small">Live Demo</a>
+                    </h1>
 
-</div>
+                    <h3>
 
-<div class="card">
+                        Web Developer &
+                        Programmer
 
-<h3>School Website</h3>
+                    </h3>
 
-<p>Official website developed using WordPress.</p>
+                    <p class="hero-text">
 
-<a href="#" class="btn-small">View</a>
+                        Passionate about creating
+                        modern websites, responsive
+                        web applications and clean
+                        user experiences.
 
-</div>
+                    </p>
 
-<div class="card">
+                    <div class="hero-btn">
 
-<h3>Research Project</h3>
+                        <a href="#projects"
+                            class="btn btn-primary">
 
-<p>Academic research and mathematics projects.</p>
+                            View Projects
 
-<a href="#" class="btn-small">Details</a>
+                        </a>
 
-</div>
+                        <a href="#contact"
+                            class="btn btn-outline-light">
 
-</div>
+                            Contact Me
 
-</section>
+                        </a>
 
-<!-- Contact -->
+                    </div>
 
-<section id="contact" class="container">
+                    <div class="social-icons">
 
-<div class="card" data-aos="zoom-in">
+                        <a href="#">
 
-<h2>Contact</h2>
+                            <i class="bi bi-github"></i>
 
-<p>
+                        </a>
 
-<i class="fa-solid fa-envelope"></i>
+                        <a href="#">
 
-Email:
-<a href="mailto:vbhwiki@email.com">
-vbhwiki@email.com
-</a>
+                            <i class="bi bi-linkedin"></i>
 
-</p>
+                        </a>
 
-<p>
+                        <a href="#">
 
-<i class="fab fa-github"></i>
+                            <i class="bi bi-facebook"></i>
 
-<a href="https://github.com/BadhonCR" target="_blank">
-github.com/BadhonCR
-</a>
+                        </a>
 
-</p>
+                        <a href="#">
 
-<p>
+                            <i class="bi bi-envelope-fill"></i>
 
-<i class="fa-solid fa-location-dot"></i>
+                        </a>
 
-Bangladesh
+                    </div>
 
-</p>
+                </div>
 
-</div>
+                <div class="col-lg-6 text-center"
+                    data-aos="fade-left">
 
-</section>
+                    <img src="assets/images/profile.png"
+                        alt="Profile"
+                        class="img-fluid hero-image">
 
-<footer>
+                </div>
 
-<p>
+            </div>
 
-© <span id="year"></span>
+        </div>
 
-Badhon Chandra Roy.
+    </section>
 
-All Rights Reserved.
+    <!-- ==========================================
+                    ABOUT
+    =========================================== -->
 
-</p>
+    <section id="about"
+        class="section">
 
-</footer>
+        <div class="container">
 
-<button id="topBtn">
+            <div class="section-title">
 
-<i class="fa-solid fa-arrow-up"></i>
+                <h2>
 
-</button>
+                    About Me
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+                </h2>
 
-<script>
+            </div>
 
-AOS.init({
-    duration:800,
-    once:true
-});
+        </div>
 
-document.getElementById("year").textContent =
-new Date().getFullYear();
+    </section>
 
-</script>
+    <!-- ==========================================
+                    SKILLS
+    =========================================== -->
 
-<script src="js/script.js"></script>
+    <section id="skills"
+        class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+
+                    Skills
+
+                </h2>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+                    PROJECTS
+    =========================================== -->
+
+    <section id="projects"
+        class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+
+                    Projects
+
+                </h2>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+                    SERVICES
+    =========================================== -->
+
+    <section id="services"
+        class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+
+                    Services
+
+                </h2>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+                    CONTACT
+    =========================================== -->
+
+    <section id="contact"
+        class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+
+                    Contact Me
+
+                </h2>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+                    FOOTER
+    =========================================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+
+                © 2026 Badhon Chandra Roy.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ==========================================
+                    BACK TO TOP
+    =========================================== -->
+
+    <button id="topBtn">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </button>
+
+    <!-- ==========================================
+                    JS
+    =========================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="js/script.js"></script>
 
 </body>
 
